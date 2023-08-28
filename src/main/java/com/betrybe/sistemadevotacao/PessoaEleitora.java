@@ -1,21 +1,21 @@
 package com.betrybe.sistemadevotacao;
 
 public class PessoaEleitora extends Pessoa {
-  private String identificadorCpf; // Identificador CPF da pessoa eleitora
+  private String cpf; // Identificador CPF da pessoa eleitora
 
-  // Construtor que aceita nome e identificadorCPF
-  public PessoaEleitora(String nomeIndividual, String identificadorCpf) {
+  // Construtor que aceita nome e CPF
+  public PessoaEleitora(String nomeIndividual, String cpf) {
     super(nomeIndividual);  // chama o construtor da classe base
-    this.identificadorCpf = identificadorCpf;
+    this.cpf = cpf;
   }
 
-  // Getter para identificadorCPF
-  public String getIdentificadorCpf() {
-    return identificadorCpf;
+  // Getter para CPF
+  public String getCpf() {
+    return cpf;
   }
 
-  // Setter para identificadorCPF
-  public void setIdentificadorCpf(String identificadorCpf) {
-    this.identificadorCpf = identificadorCpf;
+  // Setter para CPF
+  public void setCpf(String cpf) {
+    this.cpf = cpf;
   }
 }
