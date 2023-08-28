@@ -1,40 +1,40 @@
 package com.betrybe.sistemadevotacao;
 
-
 public class PessoaCandidata extends Pessoa {
 
-  private int identificadorVoto;     // identificador para votação
-  private int quantidadeVotos;       // quantidade de votos recebidos pela pessoa candidata
+  private int numero;     // identificador para votação
+  private int votos;      // quantidade de votos recebidos pela pessoa candidata
 
   /**
    * Construtor para a classe PessoaCandidata.
    *
    * @param nomeCompleto Nome completo da pessoa candidata.
-   * @param identificadorVoto Identificador para votação da pessoa candidata.
+   * @param numero Identificador para votação da pessoa candidata.
    */
-  public PessoaCandidata(String nomeCompleto, int identificadorVoto) {
-    super(nomeCompleto);           // chama o construtor da classe base
-    this.identificadorVoto = identificadorVoto;
-    this.quantidadeVotos = 0;      // inicializa quantidadeVotos com zero
+  public PessoaCandidata(String nomeCompleto, int numero) {
+    super(nomeCompleto);  // chama o construtor da classe base
+    this.numero = numero;
+    this.votos = 0;       // inicializa votos com zero
   }
 
-
-  public int getIdentificadorVoto() {
-    return identificadorVoto;
+  public int getNumero() {
+    return numero;
   }
 
-
-  public void setIdentificadorVoto(int identificadorVoto) {
-    this.identificadorVoto = identificadorVoto;
+  public void setNumero(int numero) {
+    this.numero = numero;
   }
 
+  public int getVotos() {
+    return votos;
+  }
 
-  public int getQuantidadeVotos() {
-    return quantidadeVotos;
+  // Método adicionado para definir votos
+  public void setVotos(int votos) {
+    this.votos = votos;
   }
 
   public void receberVoto() {
-    this.quantidadeVotos++;
+    this.votos++;
   }
 }
-
